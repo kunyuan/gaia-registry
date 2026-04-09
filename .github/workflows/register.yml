@@ -27,7 +27,7 @@ jobs:
           uv venv .venv --python 3.12
           source .venv/bin/activate
           # Temporary until the new manifest-aware Gaia CLI is released to PyPI.
-          uv pip install "gaia-lang @ git+https://github.com/SiliconEinstein/Gaia@0898cf17ac334027824335d3a90d040ac7913a81"
+          uv pip install "gaia-lang @ git+https://github.com/SiliconEinstein/Gaia@831b4c79df9788615011723ca888eae39f676379"
           echo "$PWD/.venv/bin" >> "$GITHUB_PATH"
 
       - name: Parse registration payload
